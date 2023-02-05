@@ -4,3 +4,7 @@ Query OK, 1 row affected (0.09 sec)
 
 mysql> use addressbook;
 Database changed
+
+UC2
+mysql> create table addressbooktable(FirstName varchar(20),LastName varchar(20), Address varchar(40), City varchar(20), State varchar(30), Zip bigint(6), PhoneNumber bigint(10));
+Query OK, 0 rows affected, 2 warnings (0.19 sec)
