@@ -78,3 +78,24 @@ mysql> select count(City) from addressbooktable where City='Sangli';
 |           1 |
 +-------------+
 1 row in set (0.00 sec)
+
+UC8
+mysql> select City='Sangli' from addressbooktable order by FirstName asc;
++---------------+
+| City='Sangli' |
++---------------+
+|             0 |
+|             0 |
+|             1 |
++---------------+
+3 rows in set (0.00 sec)
+
+mysql> select * from addressbooktable order by FirstName asc;
++-----------+----------+----------+----------+-------------+--------+-------------+
+| FirstName | LastName | Address  | City     | State       | Zip    | PhoneNumber |
++-----------+----------+----------+----------+-------------+--------+-------------+
+| Omkar     | Patil    | Kolhapur | Kolhapur | Maharashtra | 416208 |  7798741049 |
+| Prathmesh | Patil    | Kolhapur | Kolhapur | Maharashtra | 416208 |  7030362818 |
+| Sumit     | Patil    | Sangli   | Sangli   | Maharashtra | 416216 |  9158214950 |
++-----------+----------+----------+----------+-------------+--------+-------------+
+3 rows in set (0.00 sec)
