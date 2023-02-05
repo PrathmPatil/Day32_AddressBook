@@ -8,3 +8,16 @@ Database changed
 UC2
 mysql> create table addressbooktable(FirstName varchar(20),LastName varchar(20), Address varchar(40), City varchar(20), State varchar(30), Zip bigint(6), PhoneNumber bigint(10));
 Query OK, 0 rows affected, 2 warnings (0.19 sec)
+
+UC3
+mysql> insert into addressbooktable  value('Prathmesh','Patil','Kolhapur','Kolhapur','Maharashtra','416208','7030362818');
+Query OK, 1 row affected (0.05 sec)
+
+mysql> insert into addressbooktable value('Sumit','Patil','Sangli','Sangli','Maharashtra','426203',9158214950);
+Query OK, 1 row affected (0.09 sec)
+
+mysql> insert into addressbooktable value('Omkar','Patil','Kolhapur','Kolhapur','Maharashtra','416208',7798741049);
+Query OK, 1 row affected (0.08 sec)
+
+mysql> insert into addressbooktable value('Suraj','Pimple','Sangli','Sangli','Maharashtra','423293',8999140690);
+Query OK, 1 row affected (0.09 sec)
