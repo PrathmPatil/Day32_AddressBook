@@ -37,3 +37,17 @@ mysql> select * from addressbooktable;
 | Suraj     | Pimple   | Sangli   | Sangli   | Maharashtra | 423293 |  8999140690 |
 +-----------+----------+----------+----------+-------------+--------+-------------+
 4 rows in set (0.00 sec)
+
+UC5
+mysql> delete from addressbooktable where FirstName='Suraj';
+Query OK, 1 row affected (0.09 sec)
+
+mysql> select * from addressbooktable;
++-----------+----------+----------+----------+-------------+--------+-------------+
+| FirstName | LastName | Address  | City     | State       | Zip    | PhoneNumber |
++-----------+----------+----------+----------+-------------+--------+-------------+
+| Prathmesh | Patil    | Kolhapur | Kolhapur | Maharashtra | 416208 |  7030362818 |
+| Sumit     | Patil    | Sangli   | Sangli   | Maharashtra | 416216 |  9158214950 |
+| Omkar     | Patil    | Kolhapur | Kolhapur | Maharashtra | 416208 |  7798741049 |
++-----------+----------+----------+----------+-------------+--------+-------------+
+3 rows in set (0.00 sec)
