@@ -61,3 +61,20 @@ mysql> select * from addressbooktable where City='Kolhapur';
 | Omkar     | Patil    | Kolhapur | Kolhapur | Maharashtra | 416208 |  7798741049 |
 +-----------+----------+----------+----------+-------------+--------+-------------+
 2 rows in set (0.00 sec)
+
+UC7
+mysql> select count(City) from addressbooktable where City='Kolhapur';
++-------------+
+| count(City) |
++-------------+
+|           2 |
++-------------+
+1 row in set (0.00 sec)
+
+mysql> select count(City) from addressbooktable where City='Sangli';
++-------------+
+| count(City) |
++-------------+
+|           1 |
++-------------+
+1 row in set (0.00 sec)
