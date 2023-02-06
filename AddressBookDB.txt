@@ -104,3 +104,48 @@ UC9
 mysql> alter table addressbooktable add column(name varchar(30),Type varchar(40));
 Query OK, 0 rows affected (0.08 sec)
 Records: 0  Duplicates: 0  Warnings: 0
+
+UC10
+mysql> update addressbooktable set name='Prathmesh Patil' , Type='Family' where FirstName='Prathmesh';
+Query OK, 1 row affected (0.09 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> update addressbooktable set name='Sumit Patil', Type='Friend' where FirstName='Sumit';
+Query OK, 1 row affected (0.08 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> update addressbooktable set name='Omkar Patil', Type='Friend' where FirstName='Omkar';
+Query OK, 1 row affected (0.08 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> select count(Type) from addressbooktable ;
++-------------+
+| count(Type) |
++-------------+
+|           3 |
++-------------+
+1 row in set (0.00 sec)
+
+mysql> select count(Type) from addressbooktable where Type='Family' ;
++-------------+
+| count(Type) |
++-------------+
+|           1 |
++-------------+
+1 row in set (0.00 sec)
+
+mysql> select count(Type) from addressbooktable where Type='Friend' ;
++-------------+
+| count(Type) |
++-------------+
+|           2 |
++-------------+
+1 row in set (0.00 sec)
+
+mysql> select count(Type) from addressbooktable where Type='profession' ;
++-------------+
+| count(Type) |
++-------------+
+|           0 |
++-------------+
+1 row in set (0.00 sec)
