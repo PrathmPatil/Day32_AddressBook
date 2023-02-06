@@ -149,3 +149,22 @@ mysql> select count(Type) from addressbooktable where Type='profession' ;
 |           0 |
 +-------------+
 1 row in set (0.00 sec)
+
+UC11
+mysql> insert into addressbooktable value('Suraj','Pimple','Sangli','Sangli','Maharashtra','416216','8999140690','Suraj Pimple','Family''Friend');
+Query OK, 1 row affected (0.07 sec)
+
+mysql> update addressbooktable set Type='Family and Friend' where FirstName='Suraj';
+Query OK, 1 row affected (0.06 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> select * from addressbooktable;
++-----------+----------+----------+----------+-------------+--------+-------------+-----------------+-------------------+
+| FirstName | LastName | Address  | City     | State       | Zip    | PhoneNumber | name            | Type              |
++-----------+----------+----------+----------+-------------+--------+-------------+-----------------+-------------------+
+| Prathmesh | Patil    | Kolhapur | Kolhapur | Maharashtra | 416208 |  7030362818 | Prathmesh Patil | Family            |
+| Sumit     | Patil    | Sangli   | Sangli   | Maharashtra | 416216 |  9158214950 | Sumit Patil     | Friend            |
+| Omkar     | Patil    | Kolhapur | Kolhapur | Maharashtra | 416208 |  7798741049 | Omkar Patil     | Friend            |
+| Suraj     | Pimple   | Sangli   | Sangli   | Maharashtra | 416216 |  8999140690 | Suraj Pimple    | Family and Friend |
++-----------+----------+----------+----------+-------------+--------+-------------+-----------------+-------------------+
+4 rows in set (0.00 sec)
